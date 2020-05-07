@@ -1,0 +1,314 @@
+/* RESETEAR ESTILOS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+/* BACKGROUND FONDO */
+
+body {
+    background: #1A2980;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    max-height: 100vh;
+}
+
+body .bg-center {
+
+    align-items: center;   
+    display: flex;  
+    height: 75vh;  
+}
+
+body .contenedor {
+    height: auto;
+}
+
+body header .menuresponsive {
+    display: none;
+}
+
+body header .menuresponsive button {
+    border: none;
+}
+
+/* ESTABLECIENDO CONTENEDOR */
+
+body .contenedor {
+    width: 100%;
+    max-width: 996px;
+    margin: auto;
+}
+
+body header {
+   background: #fff;
+   padding: 15px 0 15px 0;
+   border-bottom: 1px solid #dedede40;
+   box-shadow: 2px 4px 6px #55555535;
+}
+
+body header .flexbox {
+    display: flex;
+    justify-content: space-between;
+    max-width: 996px;
+    margin: auto;
+}
+
+body header .logo h3 {
+  font-size: 25px;  
+  color:#0D5B73;
+  text-transform: uppercase;
+}
+
+body header nav a {
+    color:#0D5B73;
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+body .contenedor .agregar-clientes {
+    max-height: 100%;
+    width: 100%;
+    height: 500px;
+    margin-top: 75px;
+    box-shadow: 2px 12px 12px #03141a30;
+}
+
+body .contenedor .agregar-clientes .flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+body .contenedor .agregar-clientes .flexbox .foto, body .agregar-clientes .flexbox .formulario {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+body .contenedor .agregar-clientes .flexbox .foto {
+    background: #0D5B73;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px;
+}
+
+body .contenedor .agregar-clientes .flexbox .foto img {
+    width: 100%;
+    height: 250px;
+   object-fit: contain;   
+}
+
+body .contenedor .agregar-clientes .flexbox .formulario {
+    background: #fff;
+    padding: 40px;
+}
+
+body .contenedor .agregar-clientes .flexbox .formulario .flexbox {
+    padding-bottom: 35px;
+}
+
+body .contenedor .agregar-clientes .flexbox .formulario .flexbox input {
+    border: 0;
+    border-bottom: 1px solid #0D5B7350;
+    width: 48%;
+    padding: 10px 0;
+}
+
+body .contenedor .agregar-clientes .flexbox .formulario .flexbox input::placeholder {
+    font-size: 14px;
+}
+
+body .contenedor .agregar-clientes .flexbox .formulario form .flexbox:nth-child(1) .nombredelcliente {
+width: 35%;
+display: flex;
+align-items: center;
+}
+
+body .contenedor .agregar-clientes .flexbox .formulario form .flexbox:nth-child(1) .nombredelcliente h4 {
+    color:#0D5B73;
+}
+
+body .contenedor .agregar-clientes .flexbox .formulario form .flexbox:nth-child(1) input {
+    width: 60%;
+}
+
+body .contenedor .agregar-clientes .flexbox .formulario form .flexbox:nth-child(3) input {
+    width: 30%;
+}
+
+body .agregar-clientes .flexbox .formulario form .boton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+body .agregar-clientes .flexbox .formulario form .boton button {
+    background:#0D5B73;
+    padding: 7px 15px;
+    color:#fff;
+    border: 1px solid #0D5B73;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+body .agregar-clientes .flexbox .formulario form .boton button:hover {
+  background: transparent;
+  border: 1px solid #0D5B73;
+  color:#0D5B73;
+}
+
+/* LISTA DE LOS CLIENTES */
+
+body .listaclientes ul button.delete {
+    border: 0;
+    background:transparent;
+    cursor: pointer;
+}
+
+body .listaclientes ul button.edit {
+   position: absolute;
+   top: 10px;
+   left: 30px;
+   border: none;
+   background: transparent;
+   cursor: pointer;
+}
+
+body .listaclientes ul button.edit i {
+    color:#0D5B73;
+    font-size: 20px;
+}
+
+body .listaclientes ul button.delete:hover i {
+  transform: rotate(90deg);
+}
+
+body .listaclientes ul button.delete i {
+    color:#e80707;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all .5s ease;
+}
+
+body .listaclientes {
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+body .listaclientes ul {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 2px 7px 14px #0D5B73A3;
+    position: relative;
+}
+
+body .listaclientes ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #0D5B7340;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+
+body .listaclientes ul li:last-child {
+    border-bottom: none;
+}
+
+body .listaclientes ul li .titulo {
+    color:#0D5B73;
+    font-weight: bold;
+}
+
+body .listaclientes ul li .desc {
+    color:#555555bf;
+}
+
+
+@media screen and (min-width:310px) and ( max-width:720px ) {
+
+    body header {
+     padding: 15px 35px;
+     }
+
+    body header nav {
+        display: none;
+    }
+
+    body header .menuresponsive {
+        display: block;
+    }
+
+    body header .menuresponsive button i {
+        font-size: 25px;
+        color:#0D5B73;
+        cursor: pointer;
+    }
+
+    body .contenedor .agregar-clientes {
+        margin-top: 0px !important;
+    }
+
+    body .contenedor .agregar-clientes .formulario {
+        height: auto;
+    }
+
+    body .contenedor .agregar-clientes .foto {
+        height: auto;
+    }
+   
+    
+   body .contenedor .agregar-clientes .flexbox {
+       justify-content: center;
+       flex-direction: column;
+   }
+
+   body .contenedor .agregar-clientes .flexbox .foto, body .agregar-clientes .flexbox .formulario {
+       width: 100%;
+   }
+
+   body .agregar-clientes .flexbox .formulario form .flexbox  {
+    justify-content: center;
+    flex-direction: column;
+   }
+
+   body .agregar-clientes .flexbox .formulario form .flexbox:nth-child(1) {
+       display: flex;
+       justify-content: space-between;
+       flex-direction: unset;
+   }
+   
+   body .contenedor .agregar-clientes .flexbox .formulario form .flexbox:nth-child(1) .nombredelcliente {
+       width: 50%;
+   }
+
+   body .contenedor .agregar-clientes .flexbox .formulario form .flexbox:nth-child(1) .nombredelcliente h4 {
+       font-size: 15px;
+   }
+
+   body .contenedor .agregar-clientes .flexbox .formulario form .flexbox:nth-child(1) input {
+       width: 50% !important;
+   }
+
+   body .agregar-clientes .flexbox .formulario form {
+       width: 100%;
+   }
+
+   body .agregar-clientes .flexbox .formulario form .flexbox input {
+       width: 100% !important;
+       padding: 25px 0;
+       margin-bottom: 10px;
+   }
+
+   body .listaclientes {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+}
